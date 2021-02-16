@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.insoft.batch.mapper.master">
+	<select id="selectAll" resultType="kr.insoft.batch.model.master.Master">
+		SELECT seq
+		       , master_name as masterName
+		       , master_text as masterText
+		       , create_datetime as createDatetime
+		       , create_id as createId
+		       , update_datetime as updateDatetime
+		       , update_id as updateId
+		  FROM tb_master
+	</select>
+</mapper>

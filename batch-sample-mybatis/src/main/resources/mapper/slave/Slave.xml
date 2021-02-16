@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.insoft.batch.mapper.slave">
+	<select id="selectAll" resultType="string">
+		SELECT seq
+		       , slave_name as slaveName
+		       , slave_text as slaveText
+		       , create_datetime as createDatetime
+		       , create_id as createId
+		       , update_datetime as updateDatetime
+		       , update_id as updateId
+		  FROM tb_slave
+	</select>
+</mapper>
