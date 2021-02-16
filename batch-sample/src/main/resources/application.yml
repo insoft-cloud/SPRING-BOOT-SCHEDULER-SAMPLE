@@ -1,0 +1,8 @@
+server:
+  port: 8010
+  
+logging:
+  level:
+    root: WARN
+    org.springframework: INFO
+    kr.insoft.batch: DEBUG
